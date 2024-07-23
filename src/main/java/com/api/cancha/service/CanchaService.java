@@ -9,6 +9,6 @@ import java.util.Optional;
 public interface CanchaService {
     List<Cancha> getAllCanchas();
     Optional<Cancha> getCanchaById(Long id);
-
     Cancha saveCancha(Cancha cancha);
+    void deleteCanchaById(Long id);
 }

@@ -20,4 +20,9 @@ public class CanchaServiceImpl implements CanchaService{
 
     @Override
     public Cancha saveCancha(Cancha cancha) { return canchaRepository.save(cancha);}
+
+    @Override
+    public void deleteCanchaById(Long id) {
+        canchaRepository.deleteById(id);
+    }
 }
